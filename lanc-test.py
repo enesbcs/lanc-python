@@ -73,6 +73,7 @@ class LANC:
   for i in range(len(self.lancMessage)):
    self.lancMessage[i] = 0
 
+print("Press CTRL-C if no response")
 lcom = LANC(17,27) # Receiver pin: GPIO17, Sender pin: GPIO27
 print("Sending record start command")
 lcom.createcmdarray(RecordStart)
